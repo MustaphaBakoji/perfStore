@@ -82,7 +82,7 @@ function Home() {
             </div>}
             {
                 products.map((item) => (
-                    <Item _id={item._id} key={item._id} imageUrl={item.imageUrl} name={item.name} price={item.price} category={item.category} animalTYpe={item.animalTYpe} />
+                    <Item _id={item._id} key={item._id} imageUrl={item.imageUrl} name={item.name} price={item.price} category={item.category} />
                 ))
             }
         </div>

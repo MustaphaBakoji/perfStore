@@ -29,7 +29,7 @@ const AddNewProduct: React.FC = () => {
     const [loading, setLoading] = useState(false);
     const [fileError, setFileError] = useState<string | null>(null); // State for file size error
 
-    const categories = ['toys', 'food', 'Accessories'];
+    const categories = ['deodorants', 'spray', 'perfumes'];
 
     const handleInputChange = (
         e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -86,6 +86,7 @@ const AddNewProduct: React.FC = () => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    credentials: "include"
                 },
                 body: JSON.stringify(product),
             });

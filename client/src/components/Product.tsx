@@ -86,8 +86,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 {/* If no description, add spacer to push button down */}
                 {!description && <div className="flex-grow mb-5"></div>}
 
-                {/* Action Button */}
-                {/* --- UI Enhancement: Softer rounding, refined hover/focus, icon placeholder --- */}
                 <motion.button
                     className="mt-auto w-full inline-flex items-center justify-center bg-emerald-500 text-white font-medium py-2.5 px-4 rounded-lg hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition duration-200 ease-in-out" // Added mt-auto, justify-center, slightly more padding, adjusted rounding/focus
                     whileTap={{ scale: 0.97 }}

@@ -38,7 +38,7 @@ function CartItem(props: CartItemTypes) {
 
 
                             }
-                            dispatch(addToCart({ price: product.price, imageUrl: product.imageUrl, _id: product._id, animalTYpe: product.animalTYpe, category: product.category, name: product.name }))
+                            dispatch(addToCart({ price: product.price, imageUrl: product.imageUrl, _id: product._id, category: product.category, name: product.name }))
                         }}
                     >
                         +

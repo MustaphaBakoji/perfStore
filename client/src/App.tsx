@@ -64,7 +64,7 @@ function App() {
 
           {productToUpdate &&
 
-            <UpdateProduct name={productToUpdate.name} imageUrl={productToUpdate.imageUrl} price={productToUpdate.price} _id={productToUpdate._id} category={productToUpdate.category} animalTYpe={productToUpdate.animalTYpe} />
+            <UpdateProduct name={productToUpdate.name} imageUrl={productToUpdate.imageUrl} price={productToUpdate.price} _id={productToUpdate._id} category={productToUpdate.category} />
           }
         </div>}
       />
