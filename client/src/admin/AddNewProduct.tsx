@@ -8,11 +8,11 @@ interface NewProduct {
     name: string;
     price: number;
     category: string;
-    animalType: string; // new field
+
     image: string;
 }
 
-const ROOT_URL = "https://petstore-des0.onrender.com/api"; //vegapp-1.onrender.com"
+const ROOT_URL = "https://perfstore.onrender.com/api"; //vegapp-1.onrender.com"
 const MAX_FILE_SIZE = 4 * 1024 * 1024; // 4MB in bytes
 
 const AddNewProduct: React.FC = () => {
@@ -21,7 +21,7 @@ const AddNewProduct: React.FC = () => {
         name: '',
         price: 0,
         category: '',
-        animalType: '', // initialize
+
         image: '',
     });
 
@@ -30,7 +30,6 @@ const AddNewProduct: React.FC = () => {
     const [fileError, setFileError] = useState<string | null>(null); // State for file size error
 
     const categories = ['toys', 'food', 'Accessories'];
-    const animalTypes = ['dogs', 'cats', 'birds', 'fish'];
 
     const handleInputChange = (
         e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -98,7 +97,7 @@ const AddNewProduct: React.FC = () => {
                     name: '',
                     price: 0,
                     category: '',
-                    animalType: '',
+
                     image: '',
                 });
                 setImagePreview('');
@@ -150,21 +149,7 @@ const AddNewProduct: React.FC = () => {
                             </select>
                         </div>
                         {/* Animal Type */}
-                        <div>
-                            <label className="block text-sm font-medium mb-2">Animal Type</label>
-                            <select
-                                name="animalType"
-                                value={product.animalType}
-                                onChange={handleInputChange}
-                                className=" border-green-500 w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                required
-                            >
-                                <option value="">Select Animal Type</option>
-                                {animalTypes.map((type) => (
-                                    <option key={type} value={type}>{type}</option>
-                                ))}
-                            </select>
-                        </div>
+
                         {/* Price */}
                         <div>
                             <label className="block text-sm font-medium mb-2">Price</label>

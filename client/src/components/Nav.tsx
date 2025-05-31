@@ -28,7 +28,7 @@ function Nav() {
                     <h1 className='text-green-400/30 font-mono text-lg font-bold sm:font-medium  sm:text-3xl flex'>
                         {
                             // Animated Logo  
-                            ["B", "a", "k", "o", "P", "e", "t"].map((letter, index) => (
+                            ["p", "e", "r", "f", "S", "t", "o", "r", "e"].map((letter, index) => (
                                 <motion.p
                                     key={index}
                                     initial={{ x: index % 2 === 0 ? -200 : 200, rotate: 180 }}

@@ -9,7 +9,7 @@ function AdminHome() {
     return (
         <div>
             {
-                products && Array.isArray(products) && products.map((product) => (<AdminItem name={product.name} price={product.price} category={product.category} animalTYpe={product.animalTYpe} imageUrl={product.imageUrl} _id={product._id} />))
+                products && Array.isArray(products) && products.map((product) => (<AdminItem name={product.name} price={product.price} category={product.category} imageUrl={product.imageUrl} _id={product._id} />))
             }
         </div>
     )

@@ -13,12 +13,10 @@ const About = () => {
             >
                 <h1 className="flex justify-center items-center gap-2 text-4xl font-bold mb-4">
                     <FaPaw className="text-green-500" />
-                    About Our Pet Store
+                    About Our Perf store
                 </h1>
                 <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-                    Welcome to our paw-some pet store! We’re more than just a shop — we’re a community of animal lovers
-                    dedicated to helping pets live happier, healthier lives. From wagging tails to purring companions,
-                    we’re here to support every step of your pet journey.
+                    Welcome to our fragrance sanctuary, where we curate an exquisite collection of perfumes that tell unique stories through scent. From timeless classics to contemporary creations, we're dedicated to helping you discover the perfect fragrance that resonates with your personality and style.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -30,8 +28,8 @@ const About = () => {
                         <FaStore className="text-green-500 text-4xl mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold mb-2">Our Story</h3>
                         <p className="text-gray-700">
-                            Founded in 2020, our store began with a simple idea — make high-quality pet care accessible and fun.
-                            We’ve grown from a tiny corner shop to a thriving pet community hub.
+                            Founded in 2023, our perfume store began with a simple idea — make high-quality fragrances accessible to everyone.
+                            We've grown from a small boutique to a trusted destination for perfume enthusiasts.
                         </p>
                     </motion.div>
 
@@ -43,8 +41,8 @@ const About = () => {
                         <FaDog className="text-green-500 text-4xl mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold mb-2">What We Offer</h3>
                         <p className="text-gray-700">
-                            Toys, treats, grooming products, pet food, accessories, and expert advice — all tailored for your furry
-                            friends, whether they bark, purr, or chirp!
+                            From niche boutique fragrances to designer classics, we offer a carefully curated selection
+                            of authentic perfumes, along with expert guidance to help you find your signature scent.
                         </p>
                     </motion.div>
 
@@ -56,8 +54,8 @@ const About = () => {
                         <FaCat className="text-green-500 text-4xl mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold mb-2">Our Promise</h3>
                         <p className="text-gray-700">
-                            We care deeply about your pets. That’s why we only offer trusted brands, responsible sourcing,
-                            and personalized service to meet every tail-wagging need.
+                            We are committed to quality and authenticity. Every fragrance in our collection is carefully
+                            sourced from renowned perfume houses and verified for authenticity to ensure your complete satisfaction.
                         </p>
                     </motion.div>
                 </div>

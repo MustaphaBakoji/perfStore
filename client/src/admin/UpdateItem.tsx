@@ -9,22 +9,22 @@ interface NewProduct {
     name: string;
     price: number;
     category: string;
-    animalType: string; // new field
+
     image: string;
 }
 
-const ROOT_URL = "https://petstore-des0.onrender.com/api"; //vegapp-1.onrender.com"
+const ROOT_URL = "https://perfstore.onrender.com/api"; //vegapp-1.onrender.com"
 const MAX_FILE_SIZE = 4 * 1024 * 1024; // 4MB in bytes
 
 const UpadateProduct = (props: ItemTypes) => {
     const dispatch = useDispatch();
-    const { name, price, imageUrl, category, _id, animalTYpe } = props;
+    const { name, price, imageUrl, category, _id } = props;
 
     const [product, setProduct] = useState<NewProduct>({
         name: '',
         price: 0,
         category: '',
-        animalType: '',
+
         image: '', // This will hold the new base64 image or remain empty if no new image
     });
 
@@ -33,7 +33,7 @@ const UpadateProduct = (props: ItemTypes) => {
     const [fileError, setFileError] = useState<string | null>(null); // State for file size error
 
     const categories = ['toys', 'food', 'Accessories'];
-    const animalTypes = ['dogs', 'cats', 'birds', 'fish'];
+
 
     // Initialize product state and image preview with props data
     useEffect(() => {
@@ -41,11 +41,11 @@ const UpadateProduct = (props: ItemTypes) => {
             name: name,
             price: price,
             category: category,
-            animalType: animalTYpe,
+
             image: imageUrl, // Initialize with existing image URL
         });
         setImagePreview(imageUrl); // Initialize image preview with existing image URL
-    }, [name, price, imageUrl, category, animalTYpe]);
+    }, [name, price, imageUrl, category,]);
 
     const handleInputChange = (
         e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -120,7 +120,7 @@ const UpadateProduct = (props: ItemTypes) => {
                     name: '',
                     price: 0,
                     category: '',
-                    animalType: '',
+
                     image: '',
                 });
                 setImagePreview('');
@@ -171,22 +171,7 @@ const UpadateProduct = (props: ItemTypes) => {
                                 ))}
                             </select>
                         </div>
-                        {/* Animal Type */}
-                        <div>
-                            <label className="block text-sm font-medium mb-2">Animal Type</label>
-                            <select
-                                name="animalType"
-                                value={product.animalType} // Use state value
-                                onChange={handleInputChange}
-                                className=" border-green-500 w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                required
-                            >
-                                <option value="">Select Animal Type</option>
-                                {animalTypes.map((type) => (
-                                    <option key={type} value={type}>{type}</option>
-                                ))}
-                            </select>
-                        </div>
+
                         {/* Price */}
                         <div>
                             <label className="block text-sm font-medium mb-2">Price</label>

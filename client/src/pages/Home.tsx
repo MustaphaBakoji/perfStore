@@ -12,7 +12,7 @@ function Home() {
     let dispatch = useDispatch()
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('https://petstore-des0.onrender.com/api/products')
+            const response = await fetch('https://perfstore.onrender.com/api/products')
 
             if (response.ok) {
                 let data = await response.json()
@@ -36,7 +36,7 @@ function Home() {
             console.log('top');
             const fetchData = async () => {
 
-                const response = await fetch('https://petstore-des0.onrender.com/api/carts', { method: "GET", credentials: "include" })
+                const response = await fetch('https://perfstore.onrender.com/api/carts', { method: "GET", credentials: "include" })
 
 
 

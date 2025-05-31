@@ -4,7 +4,7 @@ import { ToggleLogin, ToggleSignUp } from '../redux/popUPSlice';
 import { setUser } from '../redux/userSlice';
 import { setErrors } from '../redux/errorSlice';
 import { setLoading } from '../redux/loadingSlice';
-const ROOT_URL = "https://petstore-des0.onrender.com/api"//vegapp-1.onrender.com"
+const ROOT_URL = "https://perfstore.onrender.com/api"//vegapp-1.onrender.com"
 
 const SignUp = () => {
     const dispatch = useDispatch()
