@@ -7,7 +7,7 @@ export let signupHandler = async (req, res) => {
 
     try {
         let user;
-        if (email === "admin@petstore.com") {
+        if (email === "admin@perfstore.com") {
             user = await userModel.create({ userName, email, password: hashedPassword, role: "admin" },)
 
             user = {
