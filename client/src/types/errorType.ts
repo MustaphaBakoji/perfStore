@@ -1,0 +1,1 @@
+export type errorType = { statusCode: number; message: string }

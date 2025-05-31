@@ -1,0 +1,92 @@
+const products = [
+  {
+    name: "adidas",
+    category: "deodorant",
+    imageUrl: "/deodorant_adidas.jpg",
+    price: 7200,
+  },
+  {
+    name: "native",
+    category: "deodorant",
+    imageUrl: "/deodorant_native.jpg",
+    price: 8900,
+  },
+  {
+    name: "wholeBody",
+    category: "deodorant",
+    imageUrl: "/deodorant_wholeBody.jpg",
+    price: 6200,
+  },
+  {
+    name: "alkhara",
+    category: "perfume",
+    imageUrl: "/perfume_alkhara.jpg",
+    price: 13500,
+  },
+  {
+    name: "salhar",
+    category: "perfume",
+    imageUrl: "/perfume_salhar.jpg",
+    price: 11000,
+  },
+  {
+    name: "angelShare",
+    category: "perfume",
+    imageUrl: "/perfume_angelShare.jpg",
+    price: 15700,
+  },
+  {
+    name: "clenz",
+    category: "perfume",
+    imageUrl: "/perfume_clenz.jpg",
+    price: 10100,
+  },
+  {
+    name: "cosmic",
+    category: "perfume",
+    imageUrl: "/perfume_cosmic.jpg",
+    price: 9800,
+  },
+  {
+    name: "jasmine",
+    category: "perfume",
+    imageUrl: "/perfume_jasmine.jpg",
+    price: 14200,
+  },
+  {
+    name: "jean",
+    category: "perfume",
+    imageUrl: "/perfume_jean.jpg",
+    price: 12600,
+  },
+  {
+    name: "MISSDIOR",
+    category: "perfume",
+    imageUrl: "/perfume_MISSDIOR.jpg",
+    price: 15800,
+  },
+  {
+    name: "honey",
+    category: "spray",
+    imageUrl: "/spray_honey.jpg",
+    price: 5600,
+  },
+  {
+    name: "riggs",
+    category: "spray",
+    imageUrl: "/spray_riggs.jpg",
+    price: 4600,
+  },
+  {
+    name: "vanilla",
+    category: "spray",
+    imageUrl: "/spray_vanilla.jpg",
+    price: 7500,
+  },
+  {
+    name: "yara",
+    category: "spray",
+    imageUrl: "/spray_yara.jpg",
+    price: 8300,
+  },
+];
