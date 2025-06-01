@@ -14,7 +14,7 @@ export let addNewProduct = async (req, res) => {
             price,
             imageUrl: result.secure_url,
             category,
-            animalType
+
         });
         await product.save();
         return res.status(201).json({

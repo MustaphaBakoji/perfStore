@@ -26,7 +26,7 @@ const _dirname = path.resolve()
 app.use(express.static(path.join(_dirname, "/client/dist")))
 
 app.use(cors({
-    origin: ["http://localhost:5173", "https://bakopet.netlify.app"],
+    origin: ["http://localhost:5173", "https://perfstore.netlify.app/"],
 
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"]
