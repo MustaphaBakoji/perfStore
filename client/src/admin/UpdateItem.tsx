@@ -137,7 +137,10 @@ const UpadateProduct = (props: ItemTypes) => {
     };
 
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="p-6 max-w-4xl mx-auto">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+            className="p-6 w-full h-full bg-white/85 mx-auto fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-[200]"
+
+        >
             <div className="bg-white rounded-lg shadow-lg p-8">
                 <h2 className="text-3xl font-bold mb-6">Update Pet Product</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
